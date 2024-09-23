@@ -14,7 +14,7 @@ public class Employee {
         this.fullName = fullName;
         this.email = email;
         this.password = password;
-        this.healthPlans = healthPlans;
+        this.healthPlans = (healthPlans != null) ? healthPlans : new String[10];
     }
 
     public int getId() {
